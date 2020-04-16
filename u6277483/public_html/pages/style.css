@@ -1,6 +1,6 @@
 body {background-color: rgba(180, 130, 90, 0.5);
       font-family: "Times New Roman", Times, serif}
-
+/* the whole website and some heading formats */
 
 h1   {color: black;
       font-weight: bold;
@@ -10,7 +10,7 @@ h2   {color:maroon;
       font-weight: bold;
       font-size: 30px}
 
-
+/* link decoration  */
 
 a {
     text-decoration: none;
@@ -18,13 +18,14 @@ a {
     padding: 8px 8px 8px 8px;
 }
 
+/* add hover change for users to notice the link */
 a:hover {
   color: darkblue;
 }
 
 
 
-
+/* ordered nad unordered list */
 ul{
 
 	list-style-type: none;
@@ -35,6 +36,21 @@ li{
 	font-size: 17px
 }
 
+
+/* navigation bar formats and the corresponding content to avoid overlapping */
+#navigation {
+  width: 100%;
+  position: fixed;
+  /* eliminates small gap at top of the page */
+  top: 0px;
+  height: 95px;
+  background-color: rgba(180, 130, 90, 1.0);
+}
+
+
+#content {
+  padding-top: 115px;
+}
 
 
 /* Menu division: format the menu generally including background colour and style */
@@ -71,22 +87,60 @@ padding: 20px;
     padding: 8px 8px 8px 8px;
 }
 
-/* raster and vector divisions: format images so they float left and have a margin between them and the wrapped text.  Also format clear division to allow restart of next content below wrapped text. */
+/* format images so they float left and have a margin between them and the wrapped text.  */
+/*Also format clear division to allow restart of next content below wrapped text. */
 
-
-
-#raster img {
+img {
   float: left;
   margin-right: 20px;
 }
 
-#vector img {
-  float: left;
-  margin-right: 20px;
-}
 
-#clear {
+
+.clear {
   clear: left;
 }
+
+
+/* Create internal space in the cells of the table. */
+
+table {
+  		border: 15px;
+  		text-align: center;
+  		padding: 15px;
+   		}
+
+th, td {padding: 2px 10px 2px 10px;
+        border-width: 2pt;
+        text-align: center
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+
+/* form formatting */
+
+form {background: antiquewhite;
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 7px;
+}
+
+input[type="text"] {
+  width: 90%;
+}
+
+
+/* text area for feedback input. */
+textarea {
+  width: 90%;
+  height: 3em;
+  
+}
+
+
+
 
 
